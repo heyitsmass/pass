@@ -1,9 +1,10 @@
-## Project: Pass - Open Source Experimental Password Manager
+## Pass - Open Source Experimental Password Manager
 
-**1. Goal/Vision:**
+### Goal/Vision
+
 To build a functional, open-source password manager using Next.js, serving as a platform to explore and implement various encryption techniques, secure storage, multi-factor authentication methods (OTP, Codes), and user-friendly interfaces for managing sensitive data. Primarily a learning and experimentation project.
 
-**2. Core Features:**
+### Core Features
 
 -   **Secure User Authentication:** Standard email/password login, potentially passwordless options.
 -   **Master Password Encryption:** All stored vault data encrypted using a key derived from the user's master password (using PBKDF2/Argon2). The raw master password is never stored.
@@ -15,7 +16,7 @@ To build a functional, open-source password manager using Next.js, serving as a 
 -   **Browser Extension (Future Goal):** Companion extension for autofill capabilities.
 -   **Fun Crypto Experiments:** Integrate experiments like exploring different KDFs, symmetric/asymmetric schemes, potentially homomorphic encryption concepts (if feasible).
 
-**3. Key Components / Architecture:**
+### Key Components / Architecture
 
 -   **Frontend (Next.js - Client Components):**
     -   Login/Registration UI.
@@ -38,7 +39,7 @@ To build a functional, open-source password manager using Next.js, serving as a 
     -   TOTP generation library (JavaScript).
     -   QR Code generation library (JavaScript).
 
-**4. Tech Stack:**
+### Tech Stack
 
 -   Framework: Next.js (React, TypeScript)
 -   Client-Side Crypto: Web Crypto API (`SubtleCrypto`), potentially libraries like `Argon2-browser`.
@@ -49,7 +50,7 @@ To build a functional, open-source password manager using Next.js, serving as a 
 -   QR Codes: `qrcode.react` or similar.
 -   TOTP: `otpauth` or similar JS library.
 
-**5. Potential Challenges:**
+### Potential Challenges
 
 -   Implementing cryptography correctly and securely (subtle mistakes are easy).
 -   Securely deriving keys from master passwords (salt, iterations/cost factors).
